@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SpeechToText from "./components/SpeechToText";
 import Products from "./components/Products";
+import "semantic-ui-css/semantic.min.css";
 const App = () => {
   return (
     <>
