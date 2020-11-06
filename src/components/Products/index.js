@@ -1,35 +1,68 @@
 import React from "react";
-import { Grid } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 import strawberry from "../../images/strawberry.jpg";
-import { GridImage } from "./ProductsElements";
-
+import { Container } from "../GlobalStyle";
+import { ProductsWrapper } from "./ProductsElements";
 const Products = () => {
   return (
-    <Grid columns={3} divided>
-      <Grid.Row>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-      </Grid.Row>
-
-      <Grid.Row>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-        <Grid.Column>
-          <GridImage src={strawberry} />
-        </Grid.Column>
-      </Grid.Row>
-    </Grid>
+    <ProductsWrapper>
+      <Container>
+        <Grid columns={3}>
+          <Grid.Row>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+            <Grid.Column>
+              <Card
+                image={strawberry}
+                header="Strawberry"
+                meta="discount"
+                description="strawberry is good for your help"
+              />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
+    </ProductsWrapper>
   );
 };
 
