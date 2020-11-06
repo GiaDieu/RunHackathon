@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "../GlobalStyle";
+import "./SpeechToText.css";
 
 export const SpeechToText = () => {
   const textDom = `
