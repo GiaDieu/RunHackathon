@@ -2,11 +2,12 @@ import React from "react";
 import ProductItem from "../../components/shared/ProductItem";
 import FoodEnergy from "../../components/shared/FoodEnergy";
 import Markets from "../../components/shared/Markets";
+import AddToCart from "../../components/shared/AddToCart";
 import styled from "styled-components";
 import { Container } from "semantic-ui-react";
+
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
-  padding: 0 2rem;
   max-width: 1100px;
   width: 100vh;
   height: 100vh;
@@ -16,7 +17,6 @@ const HomeContainer = styled(Container)`
 const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 30%;
 `;
 
@@ -46,7 +46,9 @@ const Home = () => {
     <Container>
       <HomeContainer>
         <HomeWrapper>
-          <HomeLeftSide>LeftSide</HomeLeftSide>
+          <HomeLeftSide>
+            <AddToCart />
+          </HomeLeftSide>
           <HomeRightSide>
             <HomeRightWrapper>
               <HomeListItems>
