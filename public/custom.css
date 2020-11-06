@@ -1,0 +1,11 @@
+#dialog {
+  background: red;
+}
+
+#dialog > .b-agent-demo .b-agent-demo_header-agent-name {
+  display: none !important;
+}
+
+.b-agent-demo .b-agent-demo_powered_by {
+  display: none;
+}
