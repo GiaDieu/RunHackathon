@@ -9,11 +9,7 @@ export const FormContainer = styled.div`
   height: 100%;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(
-    108deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
+  background: linear-gradient(108deg, rgba(#fff, 0.4) 0%, rgba(#ccc, 0.1) 100%);
 `;
 
 export const FormWrapper = styled.div`
@@ -53,7 +49,6 @@ export const FormContent = styled.div`
 `;
 
 export const Form = styled.form`
-  background: #010101;
   max-width: 400px;
   height: auto;
   width: 100%;
@@ -61,8 +56,7 @@ export const Form = styled.form`
   display: grid;
   margin: 0 auto;
   padding: 5rem 2rem;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+  font-family: "Tajawal";
   @media screen and (max-width: 400px) {
     padding: 2rem;
   }
@@ -72,28 +66,30 @@ export const FormH1 = styled.h1`
   margin-bottom: 40px;
   font-size: 20px;
   text-align: center;
-  color: #fff;
+  color: #000;
   font-weight: 400;
 `;
 
 export const FormLabel = styled.label`
   margin-bottom: 8px;
   font-size: 14px;
-  color: #fff;
+  color: #000;
 `;
 
 export const FormInput = styled.input`
   padding: 1rem;
-  margin-bottom: 2rem;
-  border: none;
+  border: 1px solid #c4c4c4;
   border-radius: 4px;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
 `;
 
 export const FormButton = styled.button`
-  background: #01bf71;
-  padding: 1rem 2rem;
+  background: #ffd819;
+  width: 176px;
+  height: 42px;
   border: none;
-  border-radius: 4px;
+  border-radius: 9px;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
@@ -101,15 +97,21 @@ export const FormButton = styled.button`
 
 export const FormButtonText = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: flex;
   justify-content: center;
   width: 450;
+  font-family: "Tajawal";
 `;
 
 export const Text = styled.span`
-  text-align: center;
+  text-align: right;
   margin-top: 1.5rem;
-  color: #fff;
-  font-size: 14px;
+  color: #000;
+  font-size: 11px;
+  margin-top: -2rem;
+  font-family: "Tajawal";
+  font-weight: normal;
+  line-height: 14.2px;
+  color: rgba(0, 0, 0, 0.6);
 `;

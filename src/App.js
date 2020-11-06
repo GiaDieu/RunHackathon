@@ -2,7 +2,7 @@ import React from "react";
 import Login from "./components/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SpeechToText from "./components/SpeechToText";
-import Products from "./components/Products";
+import Home from "./components/Home";
 import "semantic-ui-css/semantic.min.css";
 const App = () => {
   return (
@@ -10,8 +10,8 @@ const App = () => {
       <Router>
         <Switch>
           <Route path="/" exact component={Login}></Route>
-          <Route path="/test" component={SpeechToText}></Route>
-          <Route path="/products" component={Products}></Route>
+          <Route path="/assistant" component={SpeechToText}></Route>
+          <Route path="/home" component={Home}></Route>
         </Switch>
       </Router>
     </>
