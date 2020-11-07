@@ -8,9 +8,10 @@ import { Container } from "semantic-ui-react";
 
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
-  /* max-width: 1100px; */
-  /* width: 100vh; */
-  /* height: 100vh; */
+  max-width: 1100px;
+  max-height: 1000px;
+  width: 100vh;
+  height: 100vh;
   margin-top: 3rem;
   padding: 0 10px;
 `;
