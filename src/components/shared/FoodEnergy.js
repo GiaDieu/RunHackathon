@@ -113,9 +113,12 @@ const CardHeaderWrapExtra = styled.div`
 const CardFoodContentExtra = styled.div`
   display: flex;
   flex-flow: column wrap;
+  max-height: 140px;
   font-size: 1.2rem;
-  margin: 0 auto;
+  padding: -1rem 1rem;
   margin-right: 6rem;
+  margin-bottom: -1rem;
+  justify-content: center;
 `;
 
 const CardIconExtra = styled(BiBoltCircle)`
@@ -134,11 +137,15 @@ const CardHeadingExtra = styled.h3`
 `;
 
 const CardSpanExtra = styled.span`
+  display: inline-block;
   font-size: 1rem;
   box-sizing: border-box;
   margin-left: -3rem;
   color: #b3b3b3;
   margin-top: -1rem;
+  letter-spacing: 1.4px;
+  margin-bottom: 1.2rem;
+  /* line-height: 1.2; */
 `;
 
 const FoodEnergy = () => {

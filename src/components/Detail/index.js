@@ -1,10 +1,10 @@
 import React from "react";
-import ProductItem from "../shared/ProductItem";
 import FoodEnergy from "../shared/FoodEnergy";
 import FoodCarousel from "../shared/FoodCarousel";
 import FoodIntro from "../shared/FoodIntro";
 import styled from "styled-components";
 import { Container } from "semantic-ui-react";
+import Markets from "../shared/Markets";
 
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
@@ -17,30 +17,27 @@ const HomeContainer = styled(Container)`
 const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
-`;
-
-const HomeLeftSide = styled.div``;
-
-const HomeRightSide = styled.div`
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 500;
-`;
-
-const HomeRightWrapper = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-`;
-
-const HomeListItems = styled.div`
-  margin-left: -1.3rem;
+  align-items: center;
 `;
 
 const HomeListLocation = styled.div`
   align-content: center;
   flex-direction: column;
   align-items: center;
+  display: flex;
+  padding: 2rem 3rem;
+`;
+
+const HomeListMarkets = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+`;
+
+const HomeListEnergy = styled.div`
+  margin-top: 50%;
+  font-size: 1.1rem;
+  font-weight: 300;
 `;
 const Detail = () => {
   return (
@@ -52,7 +49,12 @@ const Detail = () => {
             <FoodIntro />
           </HomeListLocation>
           <HomeListLocation>
-            <FoodEnergy />
+            <HomeListMarkets>
+              <Markets />
+            </HomeListMarkets>
+            <HomeListEnergy>
+              <FoodEnergy />
+            </HomeListEnergy>
           </HomeListLocation>
         </HomeWrapper>
       </HomeContainer>
