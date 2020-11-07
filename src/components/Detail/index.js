@@ -5,6 +5,7 @@ import FoodIntro from "../shared/FoodIntro";
 import styled from "styled-components";
 import { Container } from "semantic-ui-react";
 import Markets from "../shared/Markets";
+import CardDetail from "../CardDetail";
 
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
@@ -18,6 +19,18 @@ const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const FoodIntroWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  gap: 5rem;
+`;
+
+const CardDetailWrap = styled.div`
+  align-self: flex-end;
+  margin-top: 10rem;
 `;
 
 const HomeListLocation = styled.div`
@@ -46,7 +59,12 @@ const Detail = () => {
         <HomeWrapper>
           <HomeListLocation>
             <FoodCarousel />
-            <FoodIntro />
+            <FoodIntroWrapper>
+              <FoodIntro />
+              <CardDetailWrap>
+                <CardDetail />
+              </CardDetailWrap>
+            </FoodIntroWrapper>
           </HomeListLocation>
           <HomeListLocation>
             <HomeListMarkets>
