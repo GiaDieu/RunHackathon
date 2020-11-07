@@ -31,8 +31,8 @@ h1 {
 }
 
 .col {
-  width: calc(100% - 65rem);
-  margin: 1rem;
+  width: calc(100% - 55rem);
+  margin: 2rem auto;
   cursor: pointer;
 }
 
