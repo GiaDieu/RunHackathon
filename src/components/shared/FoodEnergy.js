@@ -1,6 +1,7 @@
 import React from "react";
 import wheat from "../../images/wheat.png";
 import styled from "styled-components";
+import "../shared/customCSS/FoodEnergy.css";
 import { BiBoltCircle } from "react-icons/bi";
 
 const CardWrapper = styled.div`
@@ -162,7 +163,7 @@ const FoodEnergy = () => {
         <CardDetails>
           <CardHeadingDetails>
             <CardHeadingSpan>
-              <strong>Fats</strong>95g
+              <b>Fats</b><span className="span-margin-left"> 95g</span>
             </CardHeadingSpan>
             <CardPercentage>3%</CardPercentage>
           </CardHeadingDetails>
@@ -171,7 +172,7 @@ const FoodEnergy = () => {
           </CardRange>
           <CardHeadingDetails>
             <CardHeadingSpan>
-              <strong>Proteins</strong>42g
+              <b>Proteins</b><span className="span-margin-left"> 42g</span>
             </CardHeadingSpan>
             <CardPercentage>6%</CardPercentage>
           </CardHeadingDetails>
@@ -180,7 +181,7 @@ const FoodEnergy = () => {
           </CardRange>
           <CardHeadingDetails>
             <CardHeadingSpan>
-              <strong>Carbs</strong>270g
+              <b>Carbs</b><span className="span-margin-left"> 270g</span>
             </CardHeadingSpan>
             <CardPercentage>9%</CardPercentage>
           </CardHeadingDetails>
@@ -189,7 +190,7 @@ const FoodEnergy = () => {
           </CardRange>
           <CardHeadingDetails>
             <CardHeadingSpan>
-              <strong>Water</strong>400g
+              <b>Water</b><span className="span-margin-left"> 400g</span>
             </CardHeadingSpan>
             <CardPercentage>20%</CardPercentage>
           </CardHeadingDetails>
