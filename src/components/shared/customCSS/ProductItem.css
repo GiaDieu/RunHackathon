@@ -28,21 +28,20 @@ h1 {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  /* justify-content: center; */
 }
 
 .col {
-  width: calc(100% - 68rem);
+  width: calc(100% - 65rem);
   margin: 1rem;
   cursor: pointer;
 }
 
-/* .container {
+.left-container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1000px;
   perspective: 1000px;
-} */
+}
 
 .front {
   background-size: cover;
