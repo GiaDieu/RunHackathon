@@ -8,10 +8,11 @@ import { Container } from "semantic-ui-react";
 
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
-  max-width: 1100px;
-  width: 100vh;
-  height: 100vh;
-  margin-top: 13rem;
+  /* max-width: 1100px; */
+  /* width: 100vh; */
+  /* height: 100vh; */
+  margin-top: 3rem;
+  padding: 0 10px;
 `;
 
 const HomeWrapper = styled.div`
@@ -40,6 +41,8 @@ const HomeListItems = styled.div`
 
 const HomeListLocation = styled.div`
   display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 `;
 const Home = () => {
   return (

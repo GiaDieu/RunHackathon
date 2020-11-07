@@ -10,7 +10,6 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
         <Switch>
           <Route path="/" exact component={Login}></Route>
           <Route path="/assistant" component={SpeechToText}></Route>

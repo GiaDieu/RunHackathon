@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../GlobalStyle";
 import "./SpeechToText.css";
 
 export const SpeechToText = () => {
@@ -153,9 +152,7 @@ export const SpeechToText = () => {
 `;
   return (
     <>
-      <Container>
-        <div dangerouslySetInnerHTML={{ __html: textDom }} />
-      </Container>
+      <div dangerouslySetInnerHTML={{ __html: textDom }} />
     </>
   );
 };
