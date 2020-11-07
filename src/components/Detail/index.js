@@ -3,9 +3,9 @@ import FoodEnergy from "../shared/FoodEnergy";
 import FoodCarousel from "../shared/FoodCarousel";
 import FoodIntro from "../shared/FoodIntro";
 import styled from "styled-components";
-import { Container } from "semantic-ui-react";
 import Markets from "../shared/Markets";
 import CardDetail from "../CardDetail";
+import { Container } from "../GlobalStyle";
 
 const HomeContainer = styled(Container)`
   font-size: 1.2rem;
@@ -13,6 +13,7 @@ const HomeContainer = styled(Container)`
   width: 100vh;
   height: 100vh;
   margin-top: 5rem;
+  padding: 1.5rem 5rem;
 `;
 
 const HomeWrapper = styled.div`
@@ -48,35 +49,33 @@ const HomeListMarkets = styled.div`
 `;
 
 const HomeListEnergy = styled.div`
-  margin-top: 50%;
+  margin-top: -50rem;
   font-size: 1.1rem;
   font-weight: 300;
 `;
 const Detail = () => {
   return (
-    <Container>
-      <HomeContainer>
-        <HomeWrapper>
-          <HomeListLocation>
-            <FoodCarousel />
-            <FoodIntroWrapper>
-              <FoodIntro />
-              <CardDetailWrap>
-                <CardDetail />
-              </CardDetailWrap>
-            </FoodIntroWrapper>
-          </HomeListLocation>
-          <HomeListLocation>
-            <HomeListMarkets>
-              <Markets />
-            </HomeListMarkets>
-            <HomeListEnergy>
-              <FoodEnergy />
-            </HomeListEnergy>
-          </HomeListLocation>
-        </HomeWrapper>
-      </HomeContainer>
-    </Container>
+    <HomeContainer>
+      <HomeWrapper>
+        <HomeListLocation>
+          <FoodCarousel />
+          <FoodIntroWrapper>
+            <FoodIntro />
+            <CardDetailWrap>
+              <CardDetail />
+            </CardDetailWrap>
+          </FoodIntroWrapper>
+        </HomeListLocation>
+        <HomeListLocation>
+          <HomeListMarkets>
+            <Markets />
+          </HomeListMarkets>
+          <HomeListEnergy>
+            <FoodEnergy />
+          </HomeListEnergy>
+        </HomeListLocation>
+      </HomeWrapper>
+    </HomeContainer>
   );
 };
 
