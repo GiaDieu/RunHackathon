@@ -17,7 +17,7 @@ const HomeContainer = styled(Container)`
 const HomeWrapper = styled.div`
   display: flex;
   justify-content: center;
-  gap: 30%;
+  gap: 2%;
 `;
 
 const HomeLeftSide = styled.div``;
