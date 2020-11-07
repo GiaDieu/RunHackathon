@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SpeechToText from "./components/SpeechToText";
 import Home from "./components/Home";
+import Detail from "./components/Detail";
 import "semantic-ui-css/semantic.min.css";
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
           <Route path="/home" component={Home}></Route>
 
           {/* Quan */}
-          <Route path="/info-detail"></Route>
+          <Route path="/info-detail" component={Detail}></Route>
         </Switch>
       </Router>
     </>
