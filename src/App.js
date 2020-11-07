@@ -12,6 +12,9 @@ const App = () => {
           <Route path="/" exact component={Login}></Route>
           <Route path="/assistant" component={SpeechToText}></Route>
           <Route path="/home" component={Home}></Route>
+
+          {/* Quan */}
+          <Route path="/info-detail"></Route>
         </Switch>
       </Router>
     </>
