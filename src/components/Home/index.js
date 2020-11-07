@@ -11,7 +11,7 @@ const HomeContainer = styled(Container)`
   max-width: 1100px;
   width: 100vh;
   height: 100vh;
-  margin-top: 5rem;
+  margin-top: 13rem;
 `;
 
 const HomeWrapper = styled.div`
