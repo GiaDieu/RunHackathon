@@ -40,11 +40,6 @@ const HomeListItems = styled.div`
   margin-left: -1.3rem;
 `;
 
-// const HomeListLocation = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 50px;
-// `;
 const Home = () => {
   return (
     <Container>
