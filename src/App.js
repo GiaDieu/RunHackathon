@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SpeechToText from "./components/SpeechToText";
 import Home from "./components/Home";
 import Detail from "./components/Detail";
+import Category from "./components/Category";
 import "semantic-ui-css/semantic.min.css";
 
 import Papa from "papaparse";
@@ -33,6 +34,7 @@ const App = () => {
           <Route path="/assistant" component={SpeechToText}></Route>
           <Route path="/home" component={Home} data={data}></Route>
           <Route path="/detail" component={Detail}></Route>
+          <Route path="/category" component={Category}></Route>
         </Switch>
       </Router>
     </>
