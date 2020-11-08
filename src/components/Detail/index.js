@@ -43,6 +43,7 @@ const HomeListLocation = styled.div`
 `;
 
 const HomeListMarkets = styled.div`
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   margin-left: 5rem;
